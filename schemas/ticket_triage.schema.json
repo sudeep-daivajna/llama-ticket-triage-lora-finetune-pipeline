@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TicketTriage",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["type", "queue", "priority"],
+  "properties": {
+    "type": { "type": "string", "enum": ["Incident", "Request", "Problem", "Change"] },
+    "queue": {
+      "type": "string",
+      "enum": [
+        "Technical Support",
+        "Product Support",
+        "Customer Service",
+        "IT Support",
+        "Billing and Payments",
+        "Other"
+      ]
+    },
+    "priority": { "type": "string", "enum": ["high", "medium", "low"] }
+  }
+}

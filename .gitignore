@@ -1,0 +1,80 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =========================
+# OS / IDE
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Secrets
+# =========================
+.env
+*.env
+.env.*
+**/secrets.*
+**/*token*
+**/*apikey*
+**/*api_key*
+
+# =========================
+# Data (DON'T COMMIT DATASETS)
+# =========================
+data/raw/
+data/processed/
+data/train/
+data/eval/
+data/sft/
+
+# Keep folder structure (optional: create empty placeholder files)
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/train/.gitkeep
+!data/eval/.gitkeep
+!data/sft/.gitkeep
+
+# =========================
+# Outputs / Artifacts
+# =========================
+runs/
+outputs/
+checkpoints/
+artifacts/
+models/
+adapters/
+*.ckpt
+*.pt
+*.bin
+*.safetensors
+
+# HF / Torch caches (optional, usually huge)
+.hf_cache/
+.huggingface/
+transformers_cache/
+torch_cache/
+
+# Logging
+wandb/
+logs/
+*.log

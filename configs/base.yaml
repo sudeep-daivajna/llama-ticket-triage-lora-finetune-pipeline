@@ -1,0 +1,13 @@
+model:
+  model_id: "meta-llama/Llama-3.1-8B-Instruct"
+  dtype: "bf16"
+  max_seq_len: 2048
+
+data:
+  train_path: "data/train/train.jsonl"
+  val_path: "data/train/val.jsonl"
+
+eval:
+  schema_path: "schemas/ticket_triage.schema.json"
+  eval_set_path: "data/eval/eval_set.jsonl"
+  regression_set_path: "data/eval/regression_set.jsonl"
